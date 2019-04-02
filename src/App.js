@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Contact from "../src/components/Contact";
 import Home from "../src/components/Home";
-import Transaction from "../srcsrc/components/Transaction";
+import Transaction from "../src/components/Transaction";
 import { Header } from "../src/components/custombootstrapcomponents/Header";
 import About from "./components/About";
 
