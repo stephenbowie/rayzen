@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
-
+import {Col, Row} from 'react-bootstrap';
 
 export default class Contact extends Component {
 
@@ -11,6 +11,8 @@ export default class Contact extends Component {
               header="Contact Us"
               body="Lorem Ipsum Lorem Ipsum Lorem Ipsum L"
             />
+          <Row>
+          <Col>
           <form action="#" class="p-5 bg-white">
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -51,7 +53,33 @@ export default class Contact extends Component {
                 </div>
               </div>
             </form>
+            </Col>
+            <Col>
+            <div class="col-md-5">
+            
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">Address</p>
+              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+
+            </div>
+            
+            <div class="p-4 mb-3 bg-white">
+              <h3 class="h5 text-black mb-3">More Info</h3>
+              <p>For any questions click below</p>
+              <p><a href="#" class="btn btn-primary btn-md text-white">Learn More</a></p>
+            </div>
+
+            </div>
+            </Col>
+            </Row>
         </div>
+
       )  
 
   }
