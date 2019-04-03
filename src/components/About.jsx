@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Image, Col, Row, Container} from 'react-bootstrap';
 import './About.css';
 import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
+import { MyPerson } from "./custombootstrapcomponents/MyPerson";
 
 export default class About extends Component {
     render() {
@@ -19,22 +20,25 @@ export default class About extends Component {
             <br/>
             <Row>
               <Col>
-                <Image src="./assets/asd1.jpg" className="resize" roundedCircle />
-                <br />
-                <h2 class="displayName">Zenaida Abad</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
+                <MyPerson 
+                  src="./assets/asd1.jpg"
+                  personname="Zenaida Abad" 
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
+                />
               </Col>
               <Col>
-                <Image src="./assets/asd2.jpg" className="resize" roundedCircle />
-                <br />
-                <h2 class="displayName">Raymund Abad</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
+                <MyPerson 
+                  src="./assets/asd1.jpg"
+                  personname="Zenaida Abad" 
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
+                />
               </Col>
               <Col>
-                <Image src="./assets/asd1.jpg" className="resize" roundedCircle />
-                <br />
-                <h2 class="displayName">Zorina Abad</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
+                <MyPerson 
+                  src="./assets/asd1.jpg"
+                  personname="Zenaida Abad" 
+                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l"
+                />
               </Col>
             </Row>
             </Container>

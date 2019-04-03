@@ -4,7 +4,6 @@ import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
 export default class Home extends Component {
   render() {
     return (
-
       <div class="site-wrap">
         <div className="bodyHeader">
           <MyJumbotron
