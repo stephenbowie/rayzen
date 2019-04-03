@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Jumbotron, Container } from "react-bootstrap";
 
 export const MyJumbotron = props => {
   return (
-    <div class="site-wrap">
+    <Fragment>
       <div className="bodyHeader">
         <Jumbotron fluid>
           <Container>
@@ -13,6 +13,6 @@ export const MyJumbotron = props => {
         </Jumbotron>
       </div>
       <div className="bodyFooter" />
-    </div>
+    </Fragment>
   );
 };

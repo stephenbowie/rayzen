@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 
 export const Header = props => {
   return (
-    <div>
+    <Fragment>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">Razen Consultancy Phils Inc.,</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,6 +20,6 @@ export const Header = props => {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-    </div>
+    </Fragment>
   );
 };

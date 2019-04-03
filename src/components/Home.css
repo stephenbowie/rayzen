@@ -1,0 +1,11 @@
+.homeBody {
+  height: auto;
+  width: 100%;
+}
+
+.divBackgroundPicture {
+  background-size: contain;
+  height: auto;
+  width: 100%;
+  padding-top: 66, 64%;
+}
