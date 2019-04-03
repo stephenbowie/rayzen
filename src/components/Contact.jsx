@@ -3,6 +3,18 @@ import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
 import {Col, Row, Form, Button} from 'react-bootstrap';
 
 export default class Contact extends Component {
+    constructor(){
+      super();
+
+      this.state = {
+        firstname: '',
+        lastname: '',
+        email: '',
+        subject: '',
+        message: ''
+      }
+
+    }
 
     render() {
       return (
@@ -37,7 +49,7 @@ export default class Contact extends Component {
               </Form.Group> 
               <Form.Group controlId="exampleForm.ControlTextarea1">
                 <Form.Label>Message</Form.Label>
-                <Form.Control as="textarea" rows="5" placeholder="Write your notes or questions here..." />
+                <Form.Control as="textarea" rows="4" placeholder="Write your notes or questions here..." />
               </Form.Group>
               <Button variant="primary" type="submit">
                 Submit
@@ -59,7 +71,6 @@ export default class Contact extends Component {
             <br />
             <div class="bg-white">
               <h3 class="h5 text-black">More Info</h3>
-              <br />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p><a href="/" class="btn btn-primary btn-md text-white">Learn More</a></p>
             </div>
