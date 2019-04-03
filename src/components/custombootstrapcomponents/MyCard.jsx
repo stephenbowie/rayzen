@@ -1,5 +1,6 @@
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import React, { Fragment } from "react";
+import { Example } from "./PopoverComp";
 
 export const MyCard = props => {
   return (
@@ -9,7 +10,12 @@ export const MyCard = props => {
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.body}</Card.Text>
-          <Button variant="primary">{props.button}</Button>
+          <Example
+            header={props.popHeader}
+            body={props.popBody}
+            button={props.popButton}
+          />
+          {/* <Button variant="primary">{props.button}</Button> */}
         </Card.Body>
       </Card>
     </Fragment>

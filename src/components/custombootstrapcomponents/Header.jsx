@@ -1,11 +1,12 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+import "./Header.css";
 
 export const Header = props => {
   return (
-    <Fragment>
+    <div className="headerHeader">
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Razen Consultancy Phils Inc.,</Navbar.Brand>
+        <Navbar.Brand href="#home">Raizen Consultancy Phils Inc.,</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -20,6 +21,6 @@ export const Header = props => {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-    </Fragment>
+    </div>
   );
 };
