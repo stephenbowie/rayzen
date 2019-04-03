@@ -1,4 +1,8 @@
 .resize {
-    width:300px;
-    height: auto;
+    width:290px;
+    height: 290px;
+}
+
+.displayName {
+    padding-left: 15%;
 }

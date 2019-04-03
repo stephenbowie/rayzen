@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
-
+import {Col, Row, Form, Button} from 'react-bootstrap';
 
 export default class Contact extends Component {
 
@@ -11,48 +11,61 @@ export default class Contact extends Component {
               header="Contact Us"
               body="Lorem Ipsum Lorem Ipsum Lorem Ipsum L"
             />
-          <form action="#" class="p-5 bg-white">
-              <div class="row form-group">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control"/>
-                </div>
-                <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control"/>
-                </div>
-              </div>
+          <Row>
+          <Col>
+            <Form>
+              <Form.Row>
+                <Form.Group as={Col} controlId="formGridEmail">
+                  <Form.Label>First Name</Form.Label>
+                  <Form.Control type="firstName" placeholder="First Name" />
+                </Form.Group>
+                <Form.Group as={Col} controlId="formGridPassword">
+                  <Form.Label>Last Name</Form.Label>
+                  <Form.Control type="lastName" placeholder="Last Name" />
+                </Form.Group>
+              </Form.Row>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted">
+                We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+              <Form.Group controlId="formSubject">
+                <Form.Label>Subject</Form.Label>
+                <Form.Control type="subject" placeholder="Subject" />
+              </Form.Group> 
+              <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Message</Form.Label>
+                <Form.Control as="textarea" rows="5" placeholder="Write your notes or questions here..." />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form>
+          </Col>
+            
+          <Col>  
+            <div class="bg-white">
+              <p class="mb-0 font-weight-bold">Address</p>
+              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
 
-              <div class="row form-group"> 
-                <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control"/>
-                </div>
-              </div>
+              <p class="mb-0 font-weight-bold">Phone</p>
+              <p class="mb-4"><a href="/">+1 232 3235 324</a></p>
 
-              <div class="row form-group">
-                
-                <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
-                  <input type="subject" id="subject" class="form-control"/>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
-                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white"/>
-                </div>
-              </div>
-            </form>
-        </div>
-      )  
-
+              <p class="mb-0 font-weight-bold">Email Address</p>
+              <p class="mb-0"><a href="/">youremail@domain.com</a></p>
+            </div>
+            <br />
+            <div class="bg-white">
+              <h3 class="h5 text-black">More Info</h3>
+              <br />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p><a href="/" class="btn btn-primary btn-md text-white">Learn More</a></p>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    )  
   }
 }
