@@ -3,10 +3,10 @@ import {Image} from 'react-bootstrap';
 
 export const MyPerson = props => {
     return (
-        <div>
+        <div class="centerText">
             <Image src={props.src} className="resize" roundedCircle />
             <br />
-            <h2 class="displayName">{props.personname}</h2>
+            <div><h2>{props.personname}</h2></div>
             <p>{props.description}</p>
         </div>
     );

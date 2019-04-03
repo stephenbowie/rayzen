@@ -11,8 +11,8 @@ export const Header = props => {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/transaction">Transaction</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
           <Form inline>
             <FormControl type="text" placeholder="Search" className="mr-sm-2" />
