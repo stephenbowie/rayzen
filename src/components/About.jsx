@@ -19,16 +19,22 @@ export default class About extends Component {
             <br/>
             <Row>
               <Col>
-                <Image src="./assets/asd.jpg" className="resize" roundedCircle />
+                <Image src="./assets/asd1.jpg" className="resize" roundedCircle />
                 <br />
-                <h2>Zeny Abad</h2>
-                <p>Lorem ipsum dolor sit amet,</p>
+                <h2 class="displayName">Zenaida Abad</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
               </Col>
               <Col>
-                <Image src="./assets/asd.jpg" className="resize" roundedCircle />
+                <Image src="./assets/asd2.jpg" className="resize" roundedCircle />
                 <br />
-                <h2>Raymund Abad</h2>
-                <p>tatay tatay tatay tatay </p>
+                <h2 class="displayName">Raymund Abad</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
+              </Col>
+              <Col>
+                <Image src="./assets/asd1.jpg" className="resize" roundedCircle />
+                <br />
+                <h2 class="displayName">Zorina Abad</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l</p>
               </Col>
             </Row>
             </Container>
