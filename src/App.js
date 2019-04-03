@@ -6,6 +6,7 @@ import Contact from "../src/components/Contact";
 import Home from "../src/components/Home";
 import Transaction from "../src/components/Transaction";
 import { Header } from "../src/components/custombootstrapcomponents/Header";
+import { Footer } from "../src/components/custombootstrapcomponents/Footer";
 import About from "./components/About";
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
             <Route exact path="/about" component={About} />
           </Container>
         </Router>
+        <Footer />
       </div>
     );
   }

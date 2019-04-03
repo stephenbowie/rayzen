@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative; /*REQUIRED Sets up positioning for your footer*/
+  height: 200vh;
 }
 
 code {
