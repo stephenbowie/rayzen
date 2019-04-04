@@ -3,7 +3,7 @@ import { MyJumbotron } from "./custombootstrapcomponents/MyJumbotron";
 import { Container, Row, Col } from "react-bootstrap";
 import { TransactionCard } from "./custombootstrapcomponents/TransactionCard";
 
-export default class Transaction extends Component {
+export default class TransactionList extends Component {
   render() {
     const transacData = [
       {
@@ -38,7 +38,7 @@ export default class Transaction extends Component {
       <Fragment>
         <div className="transactionHeader">
           <MyJumbotron
-            header="Transaction"
+            header="Transaction Lists"
             body="Lorem Ipsum Lorem Ipsum Lorem Ipsum L"
           />
         </div>

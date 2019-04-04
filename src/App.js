@@ -4,10 +4,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Contact from "../src/components/Contact";
 import Home from "../src/components/Home";
-import Transaction from "../src/components/Transaction";
+import TransactionList from "../src/components/TransactionList";
 import { Header } from "../src/components/custombootstrapcomponents/Header";
 import { Footer } from "../src/components/custombootstrapcomponents/Footer";
 import About from "./components/About";
+import TransactionUpload from "./components/TransactionUpload";
 
 class App extends Component {
   render() {
@@ -26,8 +27,13 @@ class App extends Component {
           <Container>
             <Route exact path="/" component={Home} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/transaction" component={Transaction} />
+            <Route exact path="/transactionlist" component={TransactionList} />
             <Route exact path="/about" component={About} />
+            <Route
+              exact
+              path="/transactionupload"
+              component={TransactionUpload}
+            />
           </Container>
         </Router>
         <Footer />
